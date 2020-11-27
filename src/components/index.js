@@ -36,8 +36,8 @@ function relative(rec1, rec2){
 	const rec2n = normalize(rec2);
 
 	const rec = {
-		children: rec2.children
-	}
+		children: rec2.children,
+	};
 	if(rec2.top){
 		rec.top = `${rec2n.x1 - rec1n.x1}px`;
 	}
