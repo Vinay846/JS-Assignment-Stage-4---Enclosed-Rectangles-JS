@@ -59,9 +59,9 @@ function relative(rec1, rec2){
 	return rec;
 }
 
-const T = 0;
-const W = 0;
 function normalize(rec){
+	const T = 0;
+	const W = 0;
 	return{
 		x1: rec.top ? parseInt(rec.top): (T - parseInt(rec.bottom) + parseInt(rec.height)),
 		y1: rec.left ? parseInt(rec.left): (W - parseInt(rec.right) + parseInt(rec.width)),
